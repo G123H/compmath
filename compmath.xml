@@ -1,1 +1,38 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="oled_cleardisplay" id="18" x="37" y="57">
+    <next>
+      <block type="oled_drawtext" id="27">
+        <field name="TEXT">What's nine plus ten? It equals </field>
+        <next>
+          <block type="oled_drawnumber" id="36" inline="true">
+            <value name="NUMBER">
+              <block type="math_arithmetic" id="43" inline="true">
+                <field name="OP">ADD</field>
+                <value name="A">
+                  <block type="math_number" id="51">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_arithmetic" id="44" inline="true">
+                    <field name="OP">ADD</field>
+                    <value name="A">
+                      <block type="math_number" id="53">
+                        <field name="NUM">9</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="52">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
